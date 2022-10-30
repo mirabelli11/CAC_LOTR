@@ -1,27 +1,68 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 1fr 6fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+a {font-size:100%;
+   transition: 1s
+  }
+  a:hover {font-size:170%}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
     grid-template-areas:
-      "logo banner"
+     "logo banner"
       "nav nav"
       "contenido contenido"
       "pie pie";
+    text-align: justify;
   }
   
   .logo { 
-    grid-area: logo; 
-  }
-  
+    grid-area: logo;
+    justify-items: center;
+    align-items: center; 
+      }
+
   .banner { 
     grid-area: banner; 
+    justify-items: center;
+    align-items: center; 
+
   }
 
-  .nav { grid-area: nav; }  
+  .nav { 
+   font-size: 100%;
+   grid-area: nav;
+   color: #fff;
+	 font-family: 'Roboto', sans-serif;
+   text-align: center;
+   }  
 
-  .contenido { grid-area: contenido; }
+  .contenido { 
+    grid-area: contenido; 
+    text-align:justify;
+   }
   
-  .pie { grid-area: pie; }
+  .pie {
+    grid-area: pie; 
+    text-align: center;
+    border: .125em solid;
+    }
+    
   
+  @media screen and (max-width: 900px) {
+	
+  }
+  
+  @media screen and (max-width: 700px) {
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+  }
