@@ -8,6 +8,7 @@
     <title>El Señor de los Anillos</title>
 </head>
 <body>
+    <script src="script.js"></script>
     <div class="container">
         <header class="logo">
             <img src="images/logo.jpg">
@@ -24,19 +25,29 @@
         </nav>
         <main class="contenido">
             <h1>Dejanos un mensaje</h1>
-            <form action="mailto:diego@mirabelli.com.ar" method="get" enctype="text/plain">
-                <label for="firstname">Nombre:</label> <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..."> <br> <br>
-                <label for="Mesg">Mensaje:</label> <input type="text" name="" value=""> <br> <br>
-                <label for="birthdate">Fecha de Nacimiento (mm/dd/yyyy)</label> <input type="date" name="birthdate" > <br> <br>
+            <form name="Contacto" action="mailto:diego@mirabelli.com.ar" onsubmit="return validarFormulario()" method="get" enctype="text/plain">
+                <label for="firstname">Nombre:</label> 
+                <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..."> 
+                <br> <br>
+                
+                <!-- <label for="Mesg">Mensaje:</label> <input type="text" name="" value=""> <br> <br> -->
+                <p><label for="Mesg">Mensaje:</label> </p>
+                <textarea type="text" name="Mensaje" rows="8" cols="50"></textarea><br> <br>
+                
+                <label for="birthdate">Fecha de Nacimiento (mm/dd/yyyy)</label> 
+                <input type="date" name="birthdate" > <br> <br>
+                
                 <p>Sexo
                     <input type="radio" name="gender" value="hombre" checked> Hombre
-                    <input type="radio" name="gender" value="hombre" > Mujer
+                    <input type="radio" name="gender" value="mujer" > Mujer
                 </p>
+                
                 <p> Como nos conocio:
                     <input type="checkbox" name="estudio" value="primarios"> Internet
                     <input type="checkbox" name="estudio" value="secundarios" checked> Revista
                     <input type="checkbox" name="estudio" value="secundarios" checked> TV/Radio
                 </p>    
+                
                 <input type="submit" value="Enviar">
             </form>            
             <br>
