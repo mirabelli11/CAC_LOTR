@@ -3,15 +3,30 @@ body {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
+	min-width: 100%;
+
 }
 a {
   font-size:100%;
   transition: 1s
 }
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
 a:hover {
   font-size:170%
 }
 .container {
+  height: 100vh;
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 4fr;
@@ -53,7 +68,7 @@ a:hover {
 @media only screen 
 and (min-device-width: 1024px) 
 and (max-device-width: 1366px) 
-and (-webkit-min-device-pixel-ratio: 2) {
+{
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,38 +84,38 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display:none;
   } 
-/*      .nav { 
-    font-size: 200%;
-    } 
+  .nav { 
+    font-size: 130%;
+  } 
   .contenido { 
-    font-size: 200%;
-    }*/
+    font-size: 150%;
+  }
 }
 
 /*IPHONE 12 PRO*/
 @media only screen 
 and (device-width: 390px) 
 and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) {    
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5fr;
-  grid-template-areas:
-    "logo" 
-    "banner"
-    "nav"
-    "contenido"
-    "pie";
-  text-align: justify;
-}
-.logo {
-  display:none;
-}
-/*    .nav { 
-  font-size: 200%;
+{
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    grid-template-areas:
+      "logo" 
+      "banner"
+      "nav"
+      "contenido"
+      "pie";
+    text-align: justify;
+  }
+  .logo {
+    display:none;
   } 
-.contenido { 
-  font-size: 200%;
-  }*/
-} 
+  .nav { 
+    font-size: 130%;
+  } 
+  .contenido { 
+    font-size: 150%;
+  }
+}
